@@ -54,7 +54,7 @@ This project was made using [Python](https://www.python.org/) language. The libr
 # Development
 This project is a simplified implementation of the OCR architecture proposed by [Gonçalves et al. (2016)](/ITSC-2016.pdf); more particularly, related to the **character recognition** and **temporal redundancy aggregation** steps. The information given for the used database allows us to jump the steps related to *vehicle detection*, *lisence plate detection* and *characters segmentation*.
 
-**Support Vector Machines (SVM)** was the model used to predict the character values. I've also used the **Radial Basis Function (RBF)** kernel, which is the State-of-Art kernel to OCR problems. To describe the images, I've used the **Histogram of Oriented Gradients (HOG)** describer.
+**Support Vector Machines (SVM)** was the model used to predict the character values. I've also used the **Radial Basis Function (RBF)** kernel, which is the State-of-Art kernel for OCR problems. To describe the images, I've used the **Histogram of Oriented Gradients (HOG)** describer.
 
 To work with multiple classes, I've used the **One-against-all** composition. To do so, one SVM is created to each classes of the problem (in this case, the letters \[a to z] and the numbers \[0 to 9]). On the training step, these SVMs receive items from classes 1 or 0, where 1 means that the given item is from the same class that this SVM is responsible for, and 0 otherwise. On the forecasting, the input image is provided to all SVMs, and the SVM with the highest answer value has the chosen class.
 
