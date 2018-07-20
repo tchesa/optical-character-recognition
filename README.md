@@ -24,7 +24,7 @@ position_chars:
 	char6: 651 687 12 17
 ```
 #### Directory structure
-The database was divided in three sets: training, test and validation. The images was grouped by folders. These grouped images represent a video clip, which each image represents a frame of the video. These group of images will be used to simulate the temporal redundancy solution.
+The database was divided in three sets: training, test and validation. The images was grouped by folders. These grouped images represent a video clip, which each image represents a frame of the video. These group of images will be used to simulate the temporal redundancy behaviour.
 ```
 database
 ├ training
