@@ -4,7 +4,7 @@ A simple implementation of an optical character recognition problem using SVM. T
 # Related work
 This project is a simplified implementation of an OCR architecture proposed by [Gonçalves et al. (2016)](/ITSC-2016.pdf), which proposes a solution to recognize license plates in real-time using temporal redundancy.
 ![Architecture](/arch.png)
-<p align="center">Sequence of tasks performed by the proposed approach</p>
+<p align="center">Sequence of tasks performed by the proposed approach (<a href="/ITSC-2016.pdf">Gonçalves et al., 2016</a>).</p>
 
 # Database
 The database used is private, so it's not possible to provide the files in this repository. However, all you need to know about the database used in this project is:
