@@ -3,6 +3,8 @@ A simple implementation of an optical character recognition problem using SVM. T
 
 # Related work
 This project is a simplified implementation of an OCR architecture proposed by [Gonçalves et al. (2016)](/ITSC-2016.pdf), which proposes a solution to recognize license plates in real-time using temporal redundancy.
+![Architecture](/arch.png)
+<p align="center">Sequence of tasks performed by the proposed approach</p>
 
 # Database
 The database used is private, so it's not possible to provide the files in this repository. However, all you need to know about the database used in this project is:
@@ -56,5 +58,9 @@ This project is a simplified implementation of the OCR architecture proposed by 
 
 To work with multiple classes, I've used the **One-against-all** composition. To do so, one SVM is created to each classes of the problem (in this case, the letters \[a to z] and the numbers \[0 to 9]). On the training step, these SVMs receive items from classes 1 or 0, where 1 means that the given item is from the same class that this SVM is responsible for, and 0 otherwise. On the forecasting, the input image is provided to all SVMs, and the SVM with the highest answer value has the chosen class.
 
+About the temporal redundancy agregation, the same lisence plate is recognized multiple times. The final value is given by a voting process from these multiple results.
+
 # Results
-I've reached a precision of **99,7%**, using this aproach and the given database as input. To simply describe the experiment, 5523 characters (789 images) was used on the training step, and 5628 characters (804 images) was used on the test step. Although, 5613 images was predicted correctly, against 15 wrong predictions.
+I've reached a precision of **99,7%**, using this approach and the given database as input. To simply describe the experiment, 5523 characters (789 images) was used on the training step, and 5628 characters (804 images) was used on the test step. Although, 5613 images was predicted correctly, against 15 wrong predictions. The image below describes the confusion matrix got from the experiment.
+
+![Confusion matrix](/confusion.png)
