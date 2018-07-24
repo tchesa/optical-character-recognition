@@ -2,9 +2,9 @@
 A simple implementation of an optical character recognition problem using SVM. The main goal of this project is to recognize chacarters of lisence plates from a given database.
 
 # Related work
-This project is a simplified implementation of an OCR architecture proposed by [Gonçalves et al. (2016)](/ITSC-2016.pdf), which proposes a solution to recognize license plates in real-time using temporal redundancy.
+This project is a simplified implementation of an OCR architecture proposed by [Gonçalves et al. (2016)](https://ieeexplore.ieee.org/abstract/document/7795970/), which proposes a solution to recognize license plates in real-time using temporal redundancy.
 ![Architecture](/arch.png)
-<p align="center">Sequence of tasks performed by the proposed approach (<a href="/ITSC-2016.pdf">Gonçalves et al., 2016</a>).</p>
+<p align="center">Sequence of tasks performed by the proposed approach (<a href="https://ieeexplore.ieee.org/abstract/document/7795970/">Gonçalves et al., 2016</a>).</p>
 
 # Database
 The database used is private, so it's not possible to provide the files in this repository. However, all you need to know about the database used in this project is:
@@ -52,7 +52,7 @@ This project was made using [Python](https://www.python.org/) language. The libr
 * [Matplotlib](https://matplotlib.org/) to plot some graphs in order to analyse the results.
 
 # Development
-This project is a simplified implementation of the OCR architecture proposed by [Gonçalves et al. (2016)](/ITSC-2016.pdf); more particularly, related to the **character recognition** and **temporal redundancy aggregation** steps. The information given for the used database allows us to jump the steps related to *vehicle detection*, *lisence plate detection* and *characters segmentation*.
+This project is a simplified implementation of the OCR architecture proposed by [Gonçalves et al. (2016)](https://ieeexplore.ieee.org/abstract/document/7795970/); more particularly, related to the **character recognition** and **temporal redundancy aggregation** steps. The information given for the used database allows us to jump the steps related to *vehicle detection*, *lisence plate detection* and *characters segmentation*.
 
 **Support Vector Machines (SVM)** was the model used to predict the character values. I've also used the **Radial Basis Function (RBF)** kernel, which is the State-of-Art kernel for OCR problems. To describe the images, I've used the **Histogram of Oriented Gradients (HOG)** describer.
 
